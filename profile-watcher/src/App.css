@@ -1,0 +1,63 @@
+:root{
+  --clr-black:rgba(0, 0, 0, 1);
+  --clr-white:rgba(255, 255, 255, 0.925);
+  --clr-orange:rgba(255, 143, 68, 0.907);
+  --clr-grey:rgba(208, 208, 208, 0.907);
+  --clr-red:rgba(242, 77, 77, 0.907);
+  --clr-blue:rgba(33, 0, 249, 0.907);
+  --clr-light-blue:rgba(68, 162, 255, 0.907);
+  --clr-pink:rgba(246, 8, 115, 0.907);
+  --clr-purple:rgb(255, 68, 252);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100vh;
+}
+
+.container{
+  height: 100vh;
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+}
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile__cards {
+  padding: 30px;
+  text-align: center;
+  margin: 12px 0 0 0;
+  border-radius: 12px;
+  background-color: var(--clr-light-blue);
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.profile__images img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.btn-prev {
+  width: 50%;
+  padding: 8px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--clr-pink);
+}
+
+.btn-next {
+  width: 50%;
+  padding: 8px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--clr-pink);
+}
