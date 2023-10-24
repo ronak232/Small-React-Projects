@@ -7,27 +7,26 @@ function ImageSlider() {
     "https://mocki.io/v1/6ab0b9d9-1885-4dc2-a63d-72b672ef2616"
   );
 
-
   // Get the first value from the response...
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState(3);
 
   return (
-    <div className="container m-auto">
+    <div>
       <div className="text-center">
         <h4 className="fw-bold">React Slider</h4>
       </div>
-      <div className="slider w-100 h-100 m-auto p-3">
+
+      <div className="slider m-auto p-3">
         <div className="slider-wrapper">
           {responseData.map((items, index) => {
             let slideClassPostion = "nextSlide";
-            if (index === value) {
+            if (index === value && index - 1) {
               slideClassPostion = "active";
             }
-            if ( 
-              index === value - 1
-            ) {
+            if (index === value - 1) {
               slideClassPostion = "prevSlide";
             }
+
             return (
               <div
                 className={`slider-prettier ${slideClassPostion}`}

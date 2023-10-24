@@ -1,0 +1,11 @@
+.alert {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  .alert-success {
+    background-color: rgb(173, 237, 77);
+    color: white;
+  }
+  
