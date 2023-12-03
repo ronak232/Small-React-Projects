@@ -4,10 +4,13 @@
   box-sizing: border-box;
 }
 
-.container {
+.user-list {
   max-width: 1320px;
   margin: auto;
   padding: 0 16px;
+}
+
+.container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,34 +26,35 @@
   margin: 4px;
 }
 .card-img {
- padding: 10px; 
+  padding: 10px;
 }
 .user-img {
   width: 100%;
   min-height: 200px;
 }
 
-.flw-link{
+.flw-link {
   padding: 8px;
   width: 100%;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 18px;
   text-decoration: none;
   background-color: rgb(220, 164, 164);
   border-radius: 14px;
 }
 
-.pagination-btn-container {
-display: flex;
-align-items: center;
-justify-content: space-evenly;
-padding: 16px;
-    
+.pagination-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
 }
 
-.pagination-btn-container button{
+.pagination-btn button {
   padding: 5px;
   background-color: cornflowerblue;
   font-size: 18px;
   cursor: pointer;
+  border-radius: 4px;
+  margin:0 10px;
 }
